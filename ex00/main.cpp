@@ -1,16 +1,18 @@
-#include " ClapTrap.hpp"
+#include "ClapTrap.hpp"
 
 int main()
 {
     ClapTrap cp("simo");
 
-    for(int i =0; i < 8; i++)
+    // for(int i =0; i < 8; i++)
         cp.attack("hatim");
 
-    cp.takeDamage(5);
-    cp.takeDamage(50);
-    cp.takeDamage(5);
-    cp.beRepaired(2);
+    for(int i =0; i < 3; i++)
+        cp.takeDamage(3);
+    // cp.takeDamage(2);
+    // cp.takeDamage(5);
+    for(int i =0; i < 3; i++)
+        cp.beRepaired(2);
     cp.beRepaired(__UINT32_MAX__);
-    cp.beRepaired(2);
+    // cp.beRepaired(2);
 }

@@ -1,4 +1,4 @@
-#include " ClapTrap.hpp"
+#include "ClapTrap.hpp"
 
 ClapTrap::ClapTrap(const std::string &name) : name(name), hitPoints(10), energyPoints(10), attackDamage(0)
 {
@@ -6,6 +6,7 @@ ClapTrap::ClapTrap(const std::string &name) : name(name), hitPoints(10), energyP
 
 ClapTrap::~ClapTrap()
 {
+    std::cout << "Destraction for ClapTrap " << name << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap &cpy)
@@ -65,3 +66,4 @@ void ClapTrap::beRepaired(unsigned int amount)
         hitPoints = tmp;
     std::cout << "ClapTrap " << name << " repaired amount " << amount << ", hit point is " << hitPoints << std::endl;
 }
+
