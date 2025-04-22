@@ -2,11 +2,12 @@
 
 ClapTrap::ClapTrap(const std::string &name, unsigned int hit, unsigned int energy, unsigned int attack) : name(name), hitPoints(hit), energyPoints(energy), attackDamage(attack)
 {
+    std::cout << "Constructer for ClapTrap " << name << std::endl;
 }
 
 ClapTrap::~ClapTrap()
 {
-    std::cout << "Destraction for ClapTrap " << name << std::endl;
+    std::cout << "Destructer for ClapTrap " << name << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap &cpy)
@@ -67,7 +68,7 @@ void ClapTrap::beRepaired(unsigned int amount)
     std::cout << "ClapTrap " << name << " repaired amount " << amount << ", hit point is " << hitPoints << std::endl;
 }
 
-const std::string &ClapTrap::gitName() const
+const std::string &ClapTrap::getName() const
 {
     return name;
 }

@@ -9,7 +9,8 @@ int main()
 
     for(int i =0; i < 3; i++)
         cp.takeDamage(3);
-    // cp.takeDamage(2);
+    cp.takeDamage(2);
+    cp.takeDamage(2);
     // cp.takeDamage(5);
     for(int i =0; i < 3; i++)
         cp.beRepaired(2);

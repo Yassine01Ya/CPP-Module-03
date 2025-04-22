@@ -1,4 +1,4 @@
-SOURCE =  ClapTrap.cpp main.cpp ScavTrap.cpp
+SOURCE =  ClapTrap.cpp main.cpp ScavTrap.cpp FragTrap.cpp
 
 OBJECT = $(SOURCE:.cpp=.o)
 

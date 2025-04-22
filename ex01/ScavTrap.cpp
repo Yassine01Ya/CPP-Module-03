@@ -3,10 +3,11 @@
 
 ScavTrap::ScavTrap(const std::string &name) : ClapTrap(name, 100, 50, 20)
 {
+    std::cout << "Constructer for ScavTrap " << getName() << std::endl;
 }
 ScavTrap::~ScavTrap()
 {
-    std::cout << "Destraction for ScavTrap " << gitName() << std::endl;
+    std::cout << "Destructer for ScavTrap " << getName() << std::endl;
 }
 ScavTrap &ScavTrap::operator=(const ScavTrap &cpy)
 {
